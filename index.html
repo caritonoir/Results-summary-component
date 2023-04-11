@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/48a6b6dfc0.js" crossorigin="anonymous"></script>
+</head>
+<style>
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Hanken Grotesk', sans-serif;
+    background-color: white;
+}
+
+.card{
+    border-radius: 35px;
+    width: 33vw;
+    height: 47vh;
+    display: flex;
+    margin: 12% auto 0%;
+    box-shadow: 0px 20px 20px gainsboro;
+}
+
+#Result{
+    background-image: linear-gradient(#7857ff, #2e2be9);
+    text-align: center;
+    border-radius: 30px;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.seventy-six{
+    font-size: 50px;
+    color: white;
+    border-radius: 50%;
+    height: 180px;
+    width: 180px;
+    background-image: linear-gradient(#4e21ca, #2e2be9);
+    padding-top: 15%;
+}
+
+.seventy-six-h1{
+ font-size: 58px;
+ text-align: center;
+}
+
+.seventy-six-p{
+  color: #f3f5f8a6;
+}
+
+.Summary-details{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: baseline;
+    margin-left: 5%;
+    width: 18%;
+}
+
+h2{
+  color: #f3f5f8a6;
+  margin-top: 10%;
+}
+
+h3{
+  color: #ebf1ff;
+  font-size: 28px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+h4{
+  font-size: 23px;
+  color: #303b5a;
+}
+
+h5{
+  font-size: 15px;
+}
+
+.Result-p{
+  color: #f3f5f8a6;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 5% 15% 13%;
+}
+
+.Reaction, .Memory, .Verbal, .Visual{
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  width: 220%;
+  height: 10%;
+  padding: 15%;
+
+}
+
+.Reaction{
+  background-color:#fff1f1;
+}
+
+.Reaction-h5{
+    color:#ff5757
+}
+
+.Memory{
+  background-color:#fff6e4;
+}
+
+.Memory-h5{
+    color:#ffb01f;
+}
+
+.Verbal{
+  background-color: #e3fdf7;
+}
+
+.Verbal-h5{
+    color: #00bd91;
+}
+
+.Visual{
+  background-color:#e5e7f8;
+}
+
+.Visual-h5{
+    color:#1125d4;
+}
+
+button{
+  background-color:#303b5a;
+  color: white;
+  width: 220%;
+  height: 10%;
+  border-radius: 25px;
+  
+}
+
+p{
+  font-size: 18px;
+}
+
+span{
+  color: #8e8e8fa6;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+i{
+  margin-right: 8px;
+}
+
+footer{
+  text-align: center;
+  font-size: 6px;
+  margin-top: 10px;
+}
+
+</style>
+<body>
+  <div class="card">
+    <div id="Result">
+      <h2>Your Result</h2>
+      <div class="seventy-six">
+        <h1 class="seventy-six-h1">76</h1>
+        <p class="seventy-six-p">of 100</p>
+      </div>
+      <h3>Great</h3>
+      <p class="Result-p">You scored higher than 65% of the people who have taken these tests.</p>
+    </div>
+        <div class="Summary-details">
+          <h4>Summary</h4>
+          <div class="Reaction">
+            <h5 class="Reaction-h5"><i class="fa-solid fa-bolt-lightning"></i>Reaction</h5>
+            <p>80<span>/100</span></p>
+          </div>
+            <div class="Memory">
+              <h5 class="Memory-h5"><i class="fa-solid fa-brain"></i>Memory</h5>
+              <p>92<span>/100</span></p>
+            </div>
+              <div class="Verbal"> 
+                <h5 class="Verbal-h5"><i class="fa-regular fa-square-minus"></i>Verbal</h5>
+                <p>61<span>/100</span></p>
+              </div>
+              <div class="Visual">
+                <h5 class="Visual-h5"><i class="fa-regular fa-eye"></i>Visual</h5>
+                <p>72<span>/100</span></p>
+              </div>
+              <button>Continue</button> 
+        </div>
+  </div>
+  <footer>
+    <h1>Improve your front-end skills by building projects</h1>
+    <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+  </footer>
+</body>
+</html>
